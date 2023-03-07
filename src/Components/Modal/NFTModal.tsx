@@ -12,8 +12,8 @@ function NFTModal() {
       </Modal>
 
       <Group position="center">
-        <Button onClick={open} radius="xl" style={{ flex: 1 }}>
-          Open modal
+        <Button onClick={open} radius="xl" style={{ flex: 1 }} variant="gradient" gradient={{ from: 'grape', to: 'pink' }}>
+          View More...
         </Button>
       </Group>
     </>
