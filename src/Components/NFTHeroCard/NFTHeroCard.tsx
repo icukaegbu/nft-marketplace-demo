@@ -1,3 +1,4 @@
+import { useDisclosure } from '@mantine/hooks';
 import { Paper, Text, Title, Button, Group, Center } from '@mantine/core';
 import { IconEye, IconMessageCircle } from '@tabler/icons-react';
 import NFTModal from '../Modal/NFTModal';
@@ -11,6 +12,9 @@ interface NFTHeroCardProps {
 
 function NFTHeroCard({ image, title, category }: NFTHeroCardProps) {
   const { classes } = useStyles();
+  const [opened, { open }] = useDisclosure(false, {
+    onClose: () => alert("Closing")
+  });
 
   return (
     <Paper
@@ -19,6 +23,7 @@ function NFTHeroCard({ image, title, category }: NFTHeroCardProps) {
       radius="lg"
       sx={{ backgroundImage: `url(${image})` }}
       className={classes.card}
+      onClick={open}
     >
       <div>
         <Text className={classes.category} size="xs">
@@ -33,7 +38,7 @@ function NFTHeroCard({ image, title, category }: NFTHeroCardProps) {
       </Button> */}
       
       <Group spacing="lg">
-      <NFTModal />
+        <NFTModal />
         <Center>
           <IconEye size="1rem" stroke={1.5} color={"#FFF"} />
           <Text size="sm" className={classes.bodyText}>

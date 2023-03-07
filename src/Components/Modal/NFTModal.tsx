@@ -2,8 +2,9 @@ import { useDisclosure } from '@mantine/hooks';
 import { Modal, Button, Group } from '@mantine/core';
 import NFTCard from '../NFTCard/NFTCard';
 
-function NFTModal() {
-  const [opened, { open, close }] = useDisclosure(false);
+// function NFTModal({ opened, open, close }: { opened: boolean, open: () => void, close: () => void }) {
+  function NFTModal() {
+    const [opened, { open, close }] = useDisclosure(false);
 
   return (
     <>
