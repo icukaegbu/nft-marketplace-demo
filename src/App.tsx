@@ -38,7 +38,6 @@ export default function App() {
           Trending NFTs
         </Text> */}
         <CardList />
-        <Buttons />
       </Stack>
       </AppShell>
     </ThemeProvider>
