@@ -11,7 +11,7 @@ export const useStyles = createStyles((theme) => ({
     backgroundPosition: 'center',
     transition: 'transform 500ms ease',
     '&:hover': {
-      cursor: 'pointer'
+      cursor: 'grabbing'
     }
   },
 
