@@ -1854,6 +1854,13 @@
     "@mantine/utils" "6.0.0"
     react-dropzone "14.2.3"
 
+"@mantine/ds@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@mantine/ds/-/ds-6.0.1.tgz#f90550d1e5905915e3b22def344871cc7736b6c7"
+  integrity sha512-HwjDL96Kv8TUC3V/FzKtU0F53BbdlC6QK5qjbDnoqgU06O7pchCNJd3ZwDT5KS06lLa+qSoL/crFLM1dvUsiGQ==
+  dependencies:
+    "@mantine/utils" "6.0.1"
+
 "@mantine/form@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@mantine/form/-/form-6.0.0.tgz#8f0fb3af87ed1e5a6245d4630b035a271d3ab4ae"
@@ -1923,6 +1930,11 @@
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-6.0.0.tgz#26b6b89e27a77340d571a1c41a879a8344417742"
   integrity sha512-1AalSgzINKP4uv1DBTkJe/jh6yGwC2xaCQE4Atlr2bSHiLezYFMy/deGQ8XLFFv2AL0sjvewLW4ernlFujGMZg==
+
+"@mantine/utils@6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-6.0.1.tgz#cf0e42b617dbc3632a3ef29bdf0b5e29f123d6a5"
+  integrity sha512-uEN457ELHpKXS4qNAcL5OR9dFOjeFngWRZJVAPkLafWBJuLd2qmdLvKLgUVyt+cMVFtcjnu6rGVOite1+dtaFw==
 
 "@modulz/radix-icons@^4.0.0":
   version "4.0.0"
