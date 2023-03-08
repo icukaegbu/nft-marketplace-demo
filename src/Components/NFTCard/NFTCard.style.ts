@@ -27,6 +27,10 @@ export const useStyles = createStyles((theme) => ({
     textTransform: 'uppercase',
   },
 
+  first: {
+    padding: theme.spacing.md,
+  },
+
   section: {
     padding: theme.spacing.md,
     borderTop: `${rem(1)} solid ${
@@ -38,4 +42,26 @@ export const useStyles = createStyles((theme) => ({
     marginRight: rem(5),
     color: theme.colorScheme === 'dark' ? theme.colors.dark[2] : theme.colors.gray[5],
   },
+
+  circleWrapper: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    minWidth: '100%',
+    minHeight: '100%',
+    overflow: 'hidden',
+    // borderTopRightRadius: '25px',
+  },
+
+  circle: {
+    position: 'absolute',
+    width: '350px',
+    height: '350px',
+    top: '-5em',
+    right: '-12em',
+    zIndex: 1, 
+    backgroundColor: theme.colors.grape[9],
+    borderRadius: '50%',
+    opacity: 0.6,
+  }
 }));
