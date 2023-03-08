@@ -7,3 +7,10 @@ export interface NFTHeroCardProps {
   description?: string;
   price: number;
 }
+
+export interface FooterLinksProps {
+  data: {
+    title: string;
+    links: { label: string; link: string }[];
+  }[];
+}
