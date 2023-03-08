@@ -57,7 +57,11 @@ function CardList() {
         if(data.length > 20 ) {
           //take the first 20 elements of the
           const part = data.slice(0, 20)
-          // setCollection(transformer(data))
+          console.log("Sliced data: ", part)
+          const transformed = transformer(data)
+
+          console.log("Transformed data: ", transformed)
+          setCollection(transformer(data))
         }
       })
   }, [nfts])
@@ -65,7 +69,7 @@ function CardList() {
   return (
     <Container size="xl" px="xl">
       <Center maw={400} h={100} mx="auto">
-        <Text>{nfts}</Text>
+        {/* <Text>{nfts}</Text> */}
         <Select
           label="Your NFT Collection"
           placeholder="Pick one"

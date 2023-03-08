@@ -16,7 +16,7 @@ export interface FooterLinksProps {
   }[];
 }
 
-export const transformer = async (data: any) => {
+export const transformer = (data: any) => {
   const res = data.map((item: any) => {
     const { id, price, owner, title, content, collectionTitle, img, mintAddress } = item
 
