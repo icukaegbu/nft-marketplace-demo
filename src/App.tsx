@@ -15,9 +15,14 @@ import Buttons from './Components/Buttons'
 import { Hero } from './Components/Hero/Hero'
 import { FooterLinks } from './Components/Footer/Footer'
 import { FOOTER_LINKS } from './Utils/data'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
+// Create a client
+const queryClient = new QueryClient()
 
 export default function App() {
   return (
+    <QueryClientProvider client={queryClient}>
     <ThemeProvider>
       <AppShell
         padding="md"
@@ -63,5 +68,6 @@ export default function App() {
         </Stack>
       </AppShell>
     </ThemeProvider>
+    </QueryClientProvider>
   )
 }
